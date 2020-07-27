@@ -1,0 +1,13 @@
+{
+  "name": "getting-started",
+  "version": "1.0.0",
+  "description": "This project uses Quarkus, the Supersonic Subatomic Java Framework.",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "mvn clean package -DskipTests  && sudo docker build -f src/main/docker/Dockerfile.jvm -t quarkus/getting-started-jvm . && sudo docker-compose up ",
+    "test": "mvn clean package  && sudo docker build -f src/main/docker/Dockerfile.jvm -t quarkus/getting-started-jvm . && sudo docker-compose up",
+    "refresh-sonar": "mvn verify sonar:sonar jacoco:report"
+  },
+  "author": "",
+  "license": "ISC"
+}

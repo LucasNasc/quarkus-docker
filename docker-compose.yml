@@ -1,0 +1,50 @@
+version: "3"
+
+services:
+  quarkus:
+    image: quarkus/getting-started-jvm
+    container_name: app
+    environment:
+      JAVA_ENABLE_DEBUG: "true"
+    ports:
+      - "8080:8080"
+      - "5005:5005"
+    networks:
+      - env-network
+
+  postgres:
+    image: postgres
+    container_name: postgres
+    environment:
+      POSTGRES_PASSWORD: "123456"
+    volumes:
+    - ./data:/var/lib/postgresql
+    ports:
+      - "15432:5432"
+    networks:
+      - env-network
+    restart: always
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "teste@teste.com"
+      PGADMIN_DEFAULT_PASSWORD: "123456"
+    ports:
+      - "16543:80"
+    depends_on:
+      - postgres
+    networks:
+      - env-network
+    restart: always
+  sonar:
+    image: sonarqube
+    container_name: sonar
+    ports:
+    - "9000:9000"
+    networks:
+      - env-network
+networks:
+  env-network:
+    driver: bridge
