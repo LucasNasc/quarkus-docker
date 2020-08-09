@@ -1,9 +1,6 @@
 <h1 align="center">Welcome to quarkus-docker-environment 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="#" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
-  </a>
 </p>
 
 > Project with quarkus environment,  postgres, sonar, flyway in docker containers.
@@ -14,10 +11,10 @@
 npm run-script start-dev
 ```
 
-## Run tests
+## Update data in sonarQube quality gate
 
 ```sh
-npm run test
+npm run-script refresh-sonar
 ```
 
 ## Author
@@ -32,4 +29,3 @@ npm run test
 Give a ⭐️ if this project helped you!
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
