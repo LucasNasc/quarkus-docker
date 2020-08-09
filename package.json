@@ -7,6 +7,5 @@
     "start-dev": "mvn clean package -DskipTests  && sudo docker build -f src/main/docker/Dockerfile.jvm -t quarkus/getting-started-jvm . && sudo docker-compose up ",
     "refresh-sonar": "mvn verify sonar:sonar jacoco:report"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Lucas Nascimento"
 }
