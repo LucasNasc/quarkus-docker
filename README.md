@@ -1,9 +1,26 @@
 <h1 align="center">Welcome to quarkus-docker-environment 👋</h1>
 <p>
+  <img alt="Quarkus" src="https://img.shields.io/badge/quarkus-microservice-green" />
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
 > Project with quarkus environment,  postgres, sonar, flyway in docker containers controlled by npm
+  
+  
+<h4 align="center"> 
+	🚧  quarkus-docker-environment 🚀 under construction...  🚧
+</h4>
+
+### Features
+
+- [x] Integration with Postgres
+- [x] Integration with SonarQube quality gate
+- [x] Integration with Flyway 
+- [ ] Integration with Prometheus and Grafana
+- [ ] Creation of repository layer
+- [ ] Creation of resource layer
+- [ ] Creation of service layer
+
 
 ## Install
 
