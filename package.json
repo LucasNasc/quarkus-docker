@@ -1,5 +1,5 @@
 {
-  "name": "getting-started",
+  "name": "quarkus-docker-environment",
   "version": "1.0.0",
   "description": "This project uses Quarkus, the Supersonic Subatomic Java Framework.",
   "main": "index.js",

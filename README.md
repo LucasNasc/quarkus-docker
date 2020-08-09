@@ -1,30 +1,35 @@
-# getting-started project
+<h1 align="center">Welcome to quarkus-docker-environment 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
+  </a>
+</p>
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+> Project with quarkus environment,  postgres, sonar, flyway in docker containers.
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+## Install
 
-## Running the application in dev mode
-
-You can run your application in dev mode that enables live coding using:
+```sh
+npm run-script start-dev
 ```
-./mvnw quarkus:dev
+
+## Run tests
+
+```sh
+npm run test
 ```
 
-## Packaging and running the application
+## Author
 
-The application can be packaged using `./mvnw package`.
-It produces the `getting-started-1.0-SNAPSHOT-runner.jar` file in the `/target` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/lib` directory.
+👤 **Lucas Nascimento**
 
-The application is now runnable using `java -jar target/getting-started-1.0-SNAPSHOT-runner.jar`.
+* Github: [@LucasNasc](https://github.com/LucasNasc)
+* LinkedIn: [@lucaspnascimento](https://linkedin.com/in/lucaspnascimento)
 
-## Creating a native executable
+## Show your support
 
-You can create a native executable using: `./mvnw package -Pnative`.
+Give a ⭐️ if this project helped you!
 
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using: `./mvnw package -Pnative -Dquarkus.native.container-build=true`.
-
-You can then execute your native executable with: `./target/getting-started-1.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image.
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
