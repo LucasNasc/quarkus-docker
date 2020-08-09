@@ -22,7 +22,7 @@
 - [ ] Creation of service layer
 
 
-## Install
+## Run Project
 
 ```sh
 npm run-script start-dev
